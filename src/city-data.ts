@@ -1,4 +1,4 @@
-export interface ICityData {
+ export interface ICityData {
   v: string;
   n: string;
   c?: ICityData[]
