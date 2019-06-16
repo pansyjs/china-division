@@ -1,0 +1,37 @@
+{
+  "name": "@jiumao/china-city-data",
+  "version": "0.0.1",
+  "description": "中国省市区数据",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cityData"
+  ],
+  "scripts": {
+    "bootstrap": "yarn || npm i",
+    "prepare": "yarn build",
+    "build": "father build",
+    "doc:dev": "father doc dev",
+    "doc:build": "cross-env DOCZ_BASE=/china-city-data/ father doc build",
+    "gh-pages": "yarn doc:build && gh-pages -d .doc"
+  },
+  "repository": "git@github.com:ts-react/china-city-data.git",
+  "author": "wangxingkang <wangxingkang@sensoro.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "father": "^2.7.2",
+    "gh-pages": "^2.0.1",
+    "typescript": "^3.5.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}
