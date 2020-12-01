@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "build": "father-build",
+    "build": "father-build && npm run json",
     "json": "ts-node -r tsconfig-paths/register --project script-tsconfig.json ./scripts/export-json.ts"
   },
   "repository": "git@github.com:ts-react/china-city-data.git",
