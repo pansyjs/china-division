@@ -12,19 +12,29 @@
     "cityData"
   ],
   "scripts": {
-    "bootstrap": "yarn || npm i",
     "build": "father-build && npm run json",
-    "json": "ts-node -r tsconfig-paths/register --project script-tsconfig.json ./scripts/export-json.ts"
+    "json": "ts-node -r tsconfig-paths/register --project script-tsconfig.json ./scripts/export-json.ts",
+    "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
+    "prettier": "walrus prettier"
   },
   "repository": "git@github.com:ts-react/china-city-data.git",
   "author": "wangxingkang <wangxingkang@sensoro.com>",
   "license": "MIT",
   "devDependencies": {
+    "@walrus/cli": "^1.3.4",
+    "@walrus/preset-lint": "^1.1.7",
     "cross-env": "7.0.2",
     "father-build": "1.19.1",
+    "husky": "^4.3.0",
     "ts-node": "9.0.0",
     "tsconfig-paths": "3.9.0",
     "typescript": "4.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier",
+      "commit-msg": "yarn lint:commit"
+    }
   },
   "publishConfig": {
     "access": "public"

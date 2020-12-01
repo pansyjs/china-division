@@ -1,3 +1,3 @@
 import pca from './pca';
-export { DivisionData } from './pca';
+export * from './types';
 export default pca;
