@@ -1,8 +1,10 @@
-import { IBundleOptions } from 'father';
-
-const options: IBundleOptions = {
-  esm: 'rollup',
-  cjs: 'rollup'
+export default {
+  esm: {
+    type: 'rollup',
+    minify: true
+  },
+  cjs: {
+    type: 'rollup',
+    minify: true
+  }
 };
-
-export default options;

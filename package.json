@@ -1,6 +1,6 @@
 {
-  "name": "@jiumao/china-city-data",
-  "version": "0.0.1",
+  "name": "@pansy/china-division",
+  "version": "1.0.0",
   "description": "中国省市区数据",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -13,20 +13,18 @@
   ],
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "prepare": "yarn build",
-    "build": "father build",
-    "doc:dev": "father doc dev",
-    "doc:build": "cross-env DOCZ_BASE=/china-city-data/ father doc build",
-    "gh-pages": "yarn doc:build && gh-pages -d .doc"
+    "build": "father-build",
+    "json": "ts-node -r tsconfig-paths/register --project script-tsconfig.json ./scripts/export-json.ts"
   },
   "repository": "git@github.com:ts-react/china-city-data.git",
   "author": "wangxingkang <wangxingkang@sensoro.com>",
   "license": "MIT",
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "father": "^2.7.2",
-    "gh-pages": "^2.0.1",
-    "typescript": "^3.5.2"
+    "cross-env": "^7.0.2",
+    "father-build": "^1.19.1",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.2"
   },
   "publishConfig": {
     "access": "public"

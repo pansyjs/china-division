@@ -1,4 +1,4 @@
-import CityData from './city-data';
+import pca from './pca';
 
-export { ICityData } from './city-data';
-export default CityData;
+export { DivisionData } from './pca';
+export default pca;

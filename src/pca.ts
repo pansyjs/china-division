@@ -1,10 +1,10 @@
- export interface ICityData {
+ export interface DivisionData {
   v: string;
   n: string;
-  c?: ICityData[]
+  c?: DivisionData[]
 }
 
-const district: ICityData[] = [
+const district: DivisionData[] = [
   {
     v: '110000',
     n: '北京市',
