@@ -27,7 +27,7 @@
     "@walrus/plugin-release": "^1.9.1",
     "@walrus/preset-lint": "^1.1.7",
     "@walrus/test": "^1.1.3",
-    "cross-env": "7.0.2",
+    "cross-env": "7.0.3",
     "father-build": "1.19.1",
     "husky": "^4.3.0",
     "ts-node": "9.0.0",
