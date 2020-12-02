@@ -14,6 +14,7 @@
   "scripts": {
     "build": "father-build && npm run json",
     "json": "ts-node -r tsconfig-paths/register --project script-tsconfig.json ./scripts/export-json.ts",
+    "test": "walrus-test",
     "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
     "prettier": "walrus prettier",
     "release": "walrus release"
@@ -25,6 +26,7 @@
     "@walrus/cli": "^1.3.4",
     "@walrus/plugin-release": "^1.9.1",
     "@walrus/preset-lint": "^1.1.7",
+    "@walrus/test": "^1.1.3",
     "cross-env": "7.0.2",
     "father-build": "1.19.1",
     "husky": "^4.3.0",
