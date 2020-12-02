@@ -49,11 +49,7 @@ function exportCascaderData() {
   writeFileSync(
     resolve(ROOT_DIR, './cascader-options.ts'),
     `
-interface CascaderOption {
-  value: string;
-  label: string;
-  children?: CascaderOption[];
-}
+import { CascaderOption } from './types';
 
 const district: CascaderOption[] = ${JSON.stringify(cascaderOptions)}
 

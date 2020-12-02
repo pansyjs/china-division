@@ -1,8 +1,4 @@
-interface CascaderOption {
-  value: string;
-  label: string;
-  children?: CascaderOption[];
-}
+import { CascaderOption } from './types';
 
 const district: CascaderOption[] = [
   {

@@ -22,7 +22,8 @@ npm install @pansy/china-division --save
 ## 🔨 使用
 
 ```ts
-import pcaData from '@pansy/china-division';
+// Antd Cascader组件使用
+import cascaderOptions from '@pansy/china-division';
 
 // you code
 ```

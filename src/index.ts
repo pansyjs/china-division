@@ -1,4 +1,4 @@
-import pca from './pca';
+import CascaderOptions from './cascader-options';
 
 export * from './types';
-export default pca;
+export default CascaderOptions;
