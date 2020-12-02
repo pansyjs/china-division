@@ -1,35 +1,55 @@
 import { DivisionData } from './types';
 
-class DivisionUtil {
-  private divisions: DivisionData[];
-  private cache: Record<string, any>;
+type SourceKeys = 'code' | 'name' | 'children';
 
-  constructor(list: DivisionData[]) {
+type Options = Record<SourceKeys, string>;
+
+const defaultOptions: Options = {
+  code: 'v',
+  name: 'n',
+  children: 'c'
+}
+
+class DivisionUtil<S = DivisionData, O = DivisionData> {
+  private divisions: S[];
+  private cache: Record<string, any>;
+  private sourceOptions: Options;
+  private outputOptions: Options;
+
+  constructor(
+    list: S[],
+    options?: {
+      source?: Partial<Options>,
+      output?: Partial<Options>
+    }
+  ) {
     this.divisions = list;
     this.cache = {};
+    this.sourceOptions = {...defaultOptions, ...options?.source};
+    this.outputOptions = {...defaultOptions, ...options?.output};
   }
 
   /**
    * 获取数据源
    */
-  getSourceData = () => {
+  getSourceData = (): S[] => {
     return this.divisions ?? [];
   }
 
   /**
    * 获取省级别的数据
    */
-  getProvinces = (): DivisionData[] => {
+  getProvinces = (): O[] => {
     if (!Array.isArray(this.divisions) || this.divisions.length === 0) return [];
 
     if (this.cache.divisions) {
       return this.cache.divisions;
     } else {
-      const divisions = this.divisions.map((item) => ({ v: item.v, n: item.n }));
+      const divisions = this.divisions.map(this._formatDivision);
 
       this.cache.divisions = divisions;
 
-      return divisions;
+      return divisions as O[];
     }
   };
 
@@ -44,15 +64,15 @@ class DivisionUtil {
     return codes;
   }
 
-  _getProvinceData = (code: string): DivisionData => {
-    let province: DivisionData;
+  _getProvinceData = (code: string): S => {
+    let province: S;
 
     // 尝试读取缓存
     if (this.cache[code]) {
       province = this.cache[code];
     } else {
       for (let i = 0; i < this.divisions.length; i++) {
-        if (this.divisions[i].v.startsWith(code)) {
+        if (this.divisions[i][`${this.sourceOptions.code}`].startsWith(code)) {
           this.cache[code] = province = this.divisions[i];
           break;
         }
@@ -62,11 +82,18 @@ class DivisionUtil {
     return province;
   }
 
+  _formatDivision = (item) => {
+    return {
+      [`${this.outputOptions.code}`]: item[this.sourceOptions.code],
+      [`${this.outputOptions.name}`]: item[this.sourceOptions.name]
+    }
+  }
+
   /**
    * 获取指定省市区编码的下一级数据。若不指定，则获取省一级数据
    * @param code 省市区编码
    */
-  getChildrenByCode = (code?: string) => {
+  getChildrenByCode = (code?: string): O[] => {
     if (!code) return this.getProvinces();
     if (typeof code !== 'string' || code.length !== 6) return [];
     if (this.cache[code]) return this.cache[code];
@@ -76,19 +103,19 @@ class DivisionUtil {
 
     if (!province) return [];
 
-    let children = province.c ?? [];
+    let children = province[`${this.sourceOptions.children}`] ?? [];
 
     for (let i = 1; i < codes.length; i++) {
       const currentCode = codes.slice(0, i).reduce((next, current) => next + current, '');
 
       for (let item of children) {
-        if (item.v.startsWith(currentCode)) {
-          children = item.c ?? [];
+        if (item[`${this.sourceOptions.code}`].startsWith(currentCode)) {
+          children = item[`${this.sourceOptions.children}`] ?? [];
         }
       }
     }
 
-    const list = children.map(item => ({ v: item.v, n: item.n }));
+    const list = children.map(this._formatDivision);
 
     this.cache[code] = list;
 
@@ -110,14 +137,14 @@ class DivisionUtil {
     for (let i = 1; i < codes.length; i++) {
       const currentCode = codes.slice(0, i + 1).reduce((next, current) => next + current, '');
 
-      for (let item of (divisionData.c || [])) {
-        if (item.v.startsWith(currentCode)) {
+      for (let item of (divisionData[`${this.sourceOptions.children}`] || [])) {
+        if (item[`${this.sourceOptions.code}`].startsWith(currentCode)) {
           divisionData = item;
         }
       }
     }
 
-    return divisionData.n ?? '';
+    return divisionData[`${this.sourceOptions.name}`] ?? '';
   }
 }
 
