@@ -8,6 +8,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # build
+es
+lib
 
 # Dependency directories
 node_modules

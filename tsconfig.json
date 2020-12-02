@@ -13,6 +13,8 @@
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "declaration": true,
     "paths": {
       "@/*": ["./src/*"]
     }
