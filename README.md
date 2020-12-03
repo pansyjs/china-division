@@ -2,7 +2,7 @@
   @pansy/china-division
 </h1>
 
-> 提供中国省市区数据，基于[china-division](https://github.com/modood/Administrative-divisions-of-China)提供的数据
+> 基于[china-division](https://github.com/modood/Administrative-divisions-of-China), 提供中国省市区数据并提供相应的工具方法
 
 **提供两种数据格式**
 
@@ -29,9 +29,24 @@ npm install @pansy/china-division --save
 
 ```ts
 // Antd Cascader组件使用
-import cascaderOptions from '@pansy/china-division';
+import cascaderOptions, { DivisionUtil } from '@pansy/china-division';
 
-// you code
+const divisionUtil = new DivisionUtil(cascaderOptions);
+
+// 返回源数据
+divisionUtil.getSourceData(); 
+
+// 返回省级别数据
+divisionUtil.getProvinces(); 
+
+// 返回指定Code的所有子节点
+divisionUtil.getChildrenByCode('110000'); 
+
+// 返回指定Code的名称
+divisionUtil.getNameByCode('110000'); 
+
+// 返回指定Code的节点
+divisionUtil.getDivisionByCode('110000'); 
 ```
 
 ## 🌟 社区互助

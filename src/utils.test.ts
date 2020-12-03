@@ -1,4 +1,5 @@
 import DivisionUtil from './utils';
+import cascaderOptions from './';
 import { CascaderOption, DivisionData } from './types';
 
 const sourceData = [
@@ -32,18 +33,56 @@ const sourceData = [
   }
 ]
 
-let divisionUtil: DivisionUtil;
+let divisionUtil: DivisionUtil<DivisionData, DivisionData>;
 let divisionUtil1: DivisionUtil<DivisionData, CascaderOption>;
+let divisionUtil2: DivisionUtil;
 
 
 beforeEach(() => {
-  divisionUtil = new DivisionUtil(sourceData);
-  divisionUtil1 = new DivisionUtil<DivisionData, CascaderOption>(sourceData, {
+  divisionUtil = new DivisionUtil(sourceData, {
+    source: {
+      code: 'v',
+      name: 'n',
+      children: 'c'
+    },
+    output: {
+      code: 'v',
+      name: 'n',
+      children: 'c'
+    }
+  });
+  divisionUtil1 = new DivisionUtil(sourceData, {
+    source: {
+      code: 'v',
+      name: 'n',
+      children: 'c'
+    },
     output: {
       code: 'value',
       name: 'label',
       children: 'children'
     }
+  });
+  divisionUtil2 = new DivisionUtil(cascaderOptions);
+});
+
+describe('DivisionUtil used cascaderOptions', () => {
+  describe('getNameByCode', () => {
+    it('获取省级名称', () => {
+      expect(divisionUtil2.getNameByCode('110000')).toEqual('北京市');
+    });
+
+    it('获取市级名称', () => {
+      expect(divisionUtil2.getNameByCode('120100')).toEqual('市辖区');
+    });
+
+    it('获取区级名称', () => {
+      expect(divisionUtil2.getNameByCode('110112')).toEqual('通州区');
+    });
+
+    it('获取不存在的省市区', () => {
+      expect(divisionUtil2.getNameByCode('999999')).toEqual('');
+    });
   });
 });
 
@@ -79,6 +118,20 @@ describe('DivisionUtil default config', () => {
         { v: '110119', n: '延庆区' }
       ]);
     });
+  });
+
+  describe('getDivisionByCode', () => {
+    it('获取省级节点', () => {
+      expect(divisionUtil.getDivisionByCode('110000')).toEqual({ v: '110000', n: '北京市' });
+    });
+
+    it('获取市级节点', () => {
+      expect(divisionUtil.getDivisionByCode('110100')).toEqual({ v: '110100', n: '市辖区' });
+    });
+
+    it('获取区级节点', () => {
+      expect(divisionUtil.getDivisionByCode('110119')).toEqual({ v: '110119', n: '延庆区' });
+    });
   })
 
   describe('getNameByCode', () => {
@@ -97,7 +150,7 @@ describe('DivisionUtil default config', () => {
     it('获取不存在的省市区', () => {
       expect(divisionUtil.getNameByCode('999999')).toEqual('');
     });
-  })
+  });
 });
 
 describe('DivisionUtil other config', () => {
@@ -112,7 +165,7 @@ describe('DivisionUtil other config', () => {
       ]);
     });
 
-    it('获取区域数据', () => {
+    it('获取区级数据', () => {
       expect(divisionUtil1.getChildrenByCode('110100')).toEqual([
         { value: '110101', label: '东城区' },
         { value: '110102', label: '西城区' },
@@ -133,6 +186,20 @@ describe('DivisionUtil other config', () => {
       ]);
     });
   });
+
+  describe('getDivisionByCode', () => {
+    it('获取省级节点', () => {
+      expect(divisionUtil1.getDivisionByCode('110000')).toEqual({ value: '110000', label: '北京市' });
+    });
+
+    it('获取市级节点', () => {
+      expect(divisionUtil1.getDivisionByCode('110100')).toEqual({ value: '110100', label: '市辖区' });
+    });
+
+    it('获取区级节点', () => {
+      expect(divisionUtil1.getDivisionByCode('110119')).toEqual({ value: '110119', label: '延庆区' });
+    });
+  })
 
   describe('getNameByCode', () => {
     it('获取省级名称', () => {

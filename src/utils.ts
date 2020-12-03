@@ -1,16 +1,16 @@
-import { DivisionData } from './types';
+import { CascaderOption } from './types';
 
 type SourceKeys = 'code' | 'name' | 'children';
 
 type Options = Record<SourceKeys, string>;
 
 const defaultOptions: Options = {
-  code: 'v',
-  name: 'n',
-  children: 'c'
+  code: 'value',
+  name: 'label',
+  children: 'children'
 }
 
-class DivisionUtil<S = DivisionData, O = DivisionData> {
+class DivisionUtil<S = CascaderOption, O = CascaderOption> {
   private divisions: S[];
   private cache: Record<string, any>;
   private sourceOptions: Options;
@@ -127,10 +127,18 @@ class DivisionUtil<S = DivisionData, O = DivisionData> {
    * @param code
    */
   getNameByCode = (code: string): string => {
+    return this.getDivisionByCode(code)?.[this.outputOptions.name] ?? ''
+  }
+
+  /**
+   * 根据Code获取节点信息
+   * @param code
+   */
+  getDivisionByCode = (code: string): O | null => {
     const codes: string[] = this._getCodes(code);
     const province = this._getProvinceData(codes[0]);
 
-    if (!province) return '';
+    if (!province) return null;
 
     let divisionData = province;
 
@@ -144,8 +152,10 @@ class DivisionUtil<S = DivisionData, O = DivisionData> {
       }
     }
 
-    return divisionData[`${this.sourceOptions.name}`] ?? '';
-  }
+    if (!divisionData) return null;
+
+    return this._formatDivision(divisionData) as O;
+  };
 }
 
 export default DivisionUtil;
