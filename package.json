@@ -39,7 +39,7 @@
     "lodash": "^4.17.20",
     "sequelize": "^6.3.5",
     "sequelize-cursor-pagination": "^1.7.0",
-    "ts-node": "9.1.0",
+    "ts-node": "9.1.1",
     "tsconfig-paths": "3.9.0",
     "typescript": "4.1.2"
   },
