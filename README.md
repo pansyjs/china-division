@@ -9,6 +9,8 @@
 - `{ v: string; n: string; c: {...}[] }`
 - `{ label: string; value: string; children: {...}[] }` 适用于`Antd`级联选择组件
 
+如有更新数据的需求，请修改`china-division`版本，执行`npm run export:data`即可。
+
 ## ✨ 特性
 
 - 🌈 基于`china-division`，提供了香港、澳门、台湾的数据
@@ -47,6 +49,21 @@ divisionUtil.getNameByCode('110000');
 
 // 返回指定Code的节点
 divisionUtil.getDivisionByCode('110000'); 
+```
+
+## ⌨️ 本地开发
+
+```sh
+$ git clone git@github.com:pansyjs/china-division.git
+$ cd china-division
+# 安装依赖
+$ yarn
+# 导出数据
+$ npm run export:data
+# 运行测试用例
+$ npm run test
+# 编译项目
+$ npm run build
 ```
 
 ## 🌟 社区互助
