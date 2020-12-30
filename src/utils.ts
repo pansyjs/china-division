@@ -17,7 +17,7 @@ class DivisionUtil<S = CascaderOption, O = CascaderOption> {
   private outputOptions: Options;
 
   constructor(
-    list: S[],
+    list: S[] = [],
     options?: {
       source?: Partial<Options>,
       output?: Partial<Options>
@@ -72,7 +72,7 @@ class DivisionUtil<S = CascaderOption, O = CascaderOption> {
       province = this.cache[code];
     } else {
       for (let i = 0; i < this.divisions.length; i++) {
-        if (this.divisions[i][`${this.sourceOptions.code}`].startsWith(code)) {
+        if (this.divisions[i][`${this.sourceOptions.code}`]?.startsWith(code)) {
           this.cache[code] = province = this.divisions[i];
           break;
         }
@@ -109,7 +109,7 @@ class DivisionUtil<S = CascaderOption, O = CascaderOption> {
       const currentCode = codes.slice(0, i).reduce((next, current) => next + current, '');
 
       for (let item of children) {
-        if (item[`${this.sourceOptions.code}`].startsWith(currentCode)) {
+        if (item[`${this.sourceOptions.code}`]?.startsWith(currentCode)) {
           children = item[`${this.sourceOptions.children}`] ?? [];
         }
       }
@@ -146,7 +146,7 @@ class DivisionUtil<S = CascaderOption, O = CascaderOption> {
       const currentCode = codes.slice(0, i + 1).reduce((next, current) => next + current, '');
 
       for (let item of (divisionData[`${this.sourceOptions.children}`] || [])) {
-        if (item[`${this.sourceOptions.code}`].startsWith(currentCode)) {
+        if (item[`${this.sourceOptions.code}`]?.startsWith(currentCode)) {
           divisionData = item;
         }
       }

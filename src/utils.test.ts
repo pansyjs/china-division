@@ -36,6 +36,7 @@ const sourceData = [
 let divisionUtil: DivisionUtil<DivisionData, DivisionData>;
 let divisionUtil1: DivisionUtil<DivisionData, CascaderOption>;
 let divisionUtil2: DivisionUtil;
+let divisionUtil3: DivisionUtil;
 
 
 beforeEach(() => {
@@ -64,6 +65,7 @@ beforeEach(() => {
     }
   });
   divisionUtil2 = new DivisionUtil(cascaderOptions);
+  divisionUtil3 = new DivisionUtil([]);
 });
 
 describe('DivisionUtil used cascaderOptions', () => {
@@ -216,6 +218,54 @@ describe('DivisionUtil other config', () => {
 
     it('获取不存在的省市区', () => {
       expect(divisionUtil1.getNameByCode('999999')).toEqual('');
+    });
+  })
+});
+
+describe('DivisionUtil data is []', () => {
+  describe('getChildrenByCode', () => {
+    it('获取省级数据', () => {
+      expect(divisionUtil3.getChildrenByCode()).toEqual([]);
+    });
+
+    it('获取市级数据', () => {
+      expect(divisionUtil3.getChildrenByCode('110000')).toEqual([]);
+    });
+
+    it('获取区级数据', () => {
+      expect(divisionUtil3.getChildrenByCode('110100')).toEqual([]);
+    });
+  });
+
+  describe('getDivisionByCode', () => {
+    it('获取省级节点', () => {
+      expect(divisionUtil3.getDivisionByCode('110000')).toEqual(null);
+    });
+
+    it('获取市级节点', () => {
+      expect(divisionUtil3.getDivisionByCode('110100')).toEqual(null);
+    });
+
+    it('获取区级节点', () => {
+      expect(divisionUtil3.getDivisionByCode('110119')).toEqual(null);
+    });
+  })
+
+  describe('getNameByCode', () => {
+    it('获取省级名称', () => {
+      expect(divisionUtil3.getNameByCode('110000')).toEqual('');
+    });
+
+    it('获取市级名称', () => {
+      expect(divisionUtil3.getNameByCode('110100')).toEqual('');
+    });
+
+    it('获取区级名称', () => {
+      expect(divisionUtil3.getNameByCode('110112')).toEqual('');
+    });
+
+    it('获取不存在的省市区', () => {
+      expect(divisionUtil3.getNameByCode('999999')).toEqual('');
     });
   })
 })
