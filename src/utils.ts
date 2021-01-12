@@ -54,8 +54,11 @@ class DivisionUtil<S = CascaderOption, O = CascaderOption> {
   };
 
   _getCodes = (code: string): string[] => {
-    let codes: string[] = [];
+    if (!code || typeof code !== 'string') {
+      return [];
+    }
 
+    let codes: string[] = [];
     for (let i = 0; i < 3; i++) {
       codes.push(code.slice(i * 2, i * 2 + 2));
     }
@@ -136,8 +139,9 @@ class DivisionUtil<S = CascaderOption, O = CascaderOption> {
    */
   getDivisionByCode = (code: string): O | null => {
     const codes: string[] = this._getCodes(code);
-    const province = this._getProvinceData(codes[0]);
+    if (codes.length === 0) return null;
 
+    const province = this._getProvinceData(codes[0]);
     if (!province) return null;
 
     let divisionData = province;
