@@ -14,7 +14,7 @@
     "cityData"
   ],
   "scripts": {
-    "build": "father-build && npm run export:json",
+    "build": "npm run export && father-build",
     "export": "npm run export:json && npm run export:data",
     "export:json": "walrus run ./scripts/export-json.ts",
     "export:data": "walrus run ./scripts/export-data.ts",

@@ -28,7 +28,7 @@ console.log('export:data >> export pca.ts');
 exportCascaderData();
 console.log('export:data >> export cascader-options.ts');
 
-console.log('export:data >> 格式化代码');
+console.log('export:data >> prettier code');
 prettierCode(resolve(ROOT_DIR, './pca.ts'));
 prettierCode(resolve(ROOT_DIR, './cascader-options.ts'));
 
@@ -63,6 +63,7 @@ function prettierCode(source: string) {
     .then((options) => {
       const text = readFileSync(source, 'utf8');
       const formatted = prettier.format(text, { ...options, parser: 'babel' });
+      console.log(formatted);
       writeFileSync(source, formatted)
     })
 }

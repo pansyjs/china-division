@@ -24,7 +24,10 @@
 yarn add @pansy/china-division
 
 # npm
-npm install @pansy/china-division --save 
+npm install @pansy/china-division --save
+
+# pnpm 
+pnpm add @pansy/china-division
 ```
 
 ## 🔨 使用
@@ -55,11 +58,11 @@ divisionUtil.getDivisionByCode('110000');
 
 ```sh
 $ git clone git@github.com:pansyjs/china-division.git
-$ cd china-division
+$ cd ./china-division
 # 安装依赖
-$ yarn
+$ pnpm install
 # 导出数据
-$ npm run export:data
+$ npm run export
 # 运行测试用例
 $ npm run test
 # 编译项目
