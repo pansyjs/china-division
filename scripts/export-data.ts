@@ -22,11 +22,11 @@ const cascaderOptions = formatDistrict(pcaCode, {
   children: 'children'
 });
 
-console.log('export:data >> 导出开始');
+console.log('export:data >> start');
 exportData();
-console.log('export:data >> 导出精简数据');
+console.log('export:data >> export pca.ts');
 exportCascaderData();
-console.log('export:data >> 导出级联选择数据');
+console.log('export:data >> export cascader-options.ts');
 
 console.log('export:data >> 格式化代码');
 prettierCode(resolve(ROOT_DIR, './pca.ts'));
