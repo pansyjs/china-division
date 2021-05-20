@@ -30,7 +30,7 @@
     "@types/lodash": "4.14.169",
     "@types/sequelize-cursor-pagination": "1.2.1",
     "@walrus/cli": "1.3.4",
-    "@walrus/plugin-release": "1.12.1",
+    "@walrus/plugin-release": "1.13.0",
     "@walrus/plugin-run": "0.5.0",
     "@walrus/preset-lint": "^1.1.8",
     "@walrus/test": "1.1.3",
