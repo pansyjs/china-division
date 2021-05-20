@@ -1,4 +1,4 @@
-import CascaderOptions from './cascader-options';
+import CascaderOptions from './ant-design-pca';
 import DivisionUtil from './utils';
 
 export * from './types';

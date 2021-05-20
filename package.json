@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "build": "npm run export && father-build",
-    "export": "npm run export:json && npm run export:data",
+    "export": "npm run export:data && npm run export:json",
     "export:json": "walrus run ./scripts/export-json.ts",
     "export:data": "walrus run ./scripts/export-data.ts",
     "test": "walrus-test",
