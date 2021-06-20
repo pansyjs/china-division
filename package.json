@@ -41,7 +41,7 @@
     "lodash": "4.17.21",
     "sequelize": "6.6.2",
     "sequelize-cursor-pagination": "^2.2.1",
-    "typescript": "4.2.4"
+    "typescript": "4.3.4"
   },
   "husky": {
     "hooks": {
