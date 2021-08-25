@@ -13,7 +13,7 @@ specifiers:
   father-build: 1.19.8
   husky: 5.1.3
   lodash: 4.17.21
-  sequelize: 6.6.4
+  sequelize: 6.6.5
   sequelize-cursor-pagination: ^2.2.1
   typescript: 4.3.4
 
@@ -30,7 +30,7 @@ devDependencies:
   father-build: 1.19.8
   husky: 5.1.3
   lodash: 4.17.21
-  sequelize: 6.6.4
+  sequelize: 6.6.5
   sequelize-cursor-pagination: 2.2.1
   typescript: 4.3.4
 
@@ -15941,8 +15941,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /sequelize/6.6.4:
-    resolution: {integrity: sha512-SOSu3tclOjHJfvuIITUlAsh2Q642gFxjpNN+IM1quFZ7jU5Pep7FIAwBK8UWgTpNc9TK9rUr1cyLB/G25CGicA==}
+  /sequelize/6.6.5:
+    resolution: {integrity: sha512-QyRrJrDRiwuiILqTMHUA1yWOPIL12KlfmgZ3hnzQwbMvp2vJ6fzu9bYJQB+qPMosck4mBUggY4Cjoc6Et8FBIQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       mariadb: '*'
@@ -15976,7 +15976,7 @@ packages:
       sequelize-pool: 6.1.0
       toposort-class: 1.0.1
       uuid: 8.3.2
-      validator: 10.11.0
+      validator: 13.6.0
       wkx: 0.5.0
     transitivePeerDependencies:
       - supports-color
@@ -17552,8 +17552,8 @@ packages:
       builtins: 1.0.3
     dev: true
 
-  /validator/10.11.0:
-    resolution: {integrity: sha512-X/p3UZerAIsbBfN/IwahhYaBbY68EN/UQBWHtsbXGT5bfrH/p4NQzUCG1kF/rtKaNpnJ7jAu6NGTdSNtyNIXMw==}
+  /validator/13.6.0:
+    resolution: {integrity: sha512-gVgKbdbHgtxpRyR8K0O6oFZPhhB5tT1jeEHZR0Znr9Svg03U0+r9DXWMrnRAB+HtCStDQKlaIZm42tVsVjqtjg==}
     engines: {node: '>= 0.10'}
     dev: true
 
