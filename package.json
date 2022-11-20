@@ -39,7 +39,7 @@
     "father-build": "1.19.8",
     "husky": "5.1.3",
     "lodash": "4.17.21",
-    "sequelize": "6.6.4",
+    "sequelize": "6.25.7",
     "sequelize-cursor-pagination": "^2.2.1",
     "typescript": "4.3.4"
   },
