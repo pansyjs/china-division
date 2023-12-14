@@ -160,15 +160,14 @@ const district: CascaderOption[] = [
         value: '130500',
         label: '邢台市',
         children: [
-          { value: '130502', label: '桥东区' },
-          { value: '130503', label: '桥西区' },
-          { value: '130521', label: '邢台县' },
+          { value: '130502', label: '襄都区' },
+          { value: '130503', label: '信都区' },
+          { value: '130505', label: '任泽区' },
+          { value: '130506', label: '南和区' },
           { value: '130522', label: '临城县' },
           { value: '130523', label: '内丘县' },
           { value: '130524', label: '柏乡县' },
           { value: '130525', label: '隆尧县' },
-          { value: '130526', label: '任县' },
-          { value: '130527', label: '南和县' },
           { value: '130528', label: '宁晋县' },
           { value: '130529', label: '巨鹿县' },
           { value: '130530', label: '新河县' },
@@ -384,8 +383,7 @@ const district: CascaderOption[] = [
           { value: '140428', label: '长子县' },
           { value: '140429', label: '武乡县' },
           { value: '140430', label: '沁县' },
-          { value: '140431', label: '沁源县' },
-          { value: '140471', label: '山西长治高新技术产业园区' }
+          { value: '140431', label: '沁源县' }
         ]
       },
       {
@@ -418,12 +416,12 @@ const district: CascaderOption[] = [
         label: '晋中市',
         children: [
           { value: '140702', label: '榆次区' },
+          { value: '140703', label: '太谷区' },
           { value: '140721', label: '榆社县' },
           { value: '140722', label: '左权县' },
           { value: '140723', label: '和顺县' },
           { value: '140724', label: '昔阳县' },
           { value: '140725', label: '寿阳县' },
-          { value: '140726', label: '太谷县' },
           { value: '140727', label: '祁县' },
           { value: '140728', label: '平遥县' },
           { value: '140729', label: '灵石县' },
@@ -531,7 +529,6 @@ const district: CascaderOption[] = [
           { value: '150123', label: '和林格尔县' },
           { value: '150124', label: '清水河县' },
           { value: '150125', label: '武川县' },
-          { value: '150171', label: '呼和浩特金海工业园区' },
           { value: '150172', label: '呼和浩特经济技术开发区' }
         ]
       },
@@ -686,7 +683,7 @@ const district: CascaderOption[] = [
           { value: '152529', label: '正镶白旗' },
           { value: '152530', label: '正蓝旗' },
           { value: '152531', label: '多伦县' },
-          { value: '152571', label: '乌拉盖管委会' }
+          { value: '152571', label: '乌拉盖管理区管委会' }
         ]
       },
       {
@@ -696,7 +693,7 @@ const district: CascaderOption[] = [
           { value: '152921', label: '阿拉善左旗' },
           { value: '152922', label: '阿拉善右旗' },
           { value: '152923', label: '额济纳旗' },
-          { value: '152971', label: '内蒙古阿拉善经济开发区' }
+          { value: '152971', label: '内蒙古阿拉善高新技术产业开发区' }
         ]
       }
     ]
@@ -912,7 +909,8 @@ const district: CascaderOption[] = [
           { value: '220173', label: '长春高新技术产业开发区' },
           { value: '220174', label: '长春汽车经济技术开发区' },
           { value: '220182', label: '榆树市' },
-          { value: '220183', label: '德惠市' }
+          { value: '220183', label: '德惠市' },
+          { value: '220184', label: '公主岭市' }
         ]
       },
       {
@@ -941,7 +939,6 @@ const district: CascaderOption[] = [
           { value: '220303', label: '铁东区' },
           { value: '220322', label: '梨树县' },
           { value: '220323', label: '伊通满族自治县' },
-          { value: '220381', label: '公主岭市' },
           { value: '220382', label: '双辽市' }
         ]
       },
@@ -1180,7 +1177,6 @@ const district: CascaderOption[] = [
           { value: '231004', label: '爱民区' },
           { value: '231005', label: '西安区' },
           { value: '231025', label: '林口县' },
-          { value: '231071', label: '牡丹江经济技术开发区' },
           { value: '231081', label: '绥芬河市' },
           { value: '231083', label: '海林市' },
           { value: '231084', label: '宁安市' },
@@ -1331,7 +1327,7 @@ const district: CascaderOption[] = [
           { value: '320507', label: '相城区' },
           { value: '320508', label: '姑苏区' },
           { value: '320509', label: '吴江区' },
-          { value: '320571', label: '苏州工业园区' },
+          { value: '320576', label: '苏州工业园区' },
           { value: '320581', label: '常熟市' },
           { value: '320582', label: '张家港市' },
           { value: '320583', label: '昆山市' },
@@ -1342,14 +1338,13 @@ const district: CascaderOption[] = [
         value: '320600',
         label: '南通市',
         children: [
-          { value: '320602', label: '崇川区' },
-          { value: '320611', label: '港闸区' },
           { value: '320612', label: '通州区' },
+          { value: '320613', label: '崇川区' },
+          { value: '320614', label: '海门区' },
           { value: '320623', label: '如东县' },
           { value: '320671', label: '南通经济技术开发区' },
           { value: '320681', label: '启东市' },
           { value: '320682', label: '如皋市' },
-          { value: '320684', label: '海门市' },
           { value: '320685', label: '海安市' }
         ]
       },
@@ -1363,8 +1358,7 @@ const district: CascaderOption[] = [
           { value: '320722', label: '东海县' },
           { value: '320723', label: '灌云县' },
           { value: '320724', label: '灌南县' },
-          { value: '320771', label: '连云港经济技术开发区' },
-          { value: '320772', label: '连云港高新技术产业开发区' }
+          { value: '320771', label: '连云港经济技术开发区' }
         ]
       },
       {
@@ -1430,7 +1424,6 @@ const district: CascaderOption[] = [
           { value: '321202', label: '海陵区' },
           { value: '321203', label: '高港区' },
           { value: '321204', label: '姜堰区' },
-          { value: '321271', label: '泰州医药高新技术产业开发区' },
           { value: '321281', label: '兴化市' },
           { value: '321282', label: '靖江市' },
           { value: '321283', label: '泰兴市' }
@@ -1459,8 +1452,6 @@ const district: CascaderOption[] = [
         label: '杭州市',
         children: [
           { value: '330102', label: '上城区' },
-          { value: '330103', label: '下城区' },
-          { value: '330104', label: '江干区' },
           { value: '330105', label: '拱墅区' },
           { value: '330106', label: '西湖区' },
           { value: '330108', label: '滨江区' },
@@ -1468,6 +1459,8 @@ const district: CascaderOption[] = [
           { value: '330110', label: '余杭区' },
           { value: '330111', label: '富阳区' },
           { value: '330112', label: '临安区' },
+          { value: '330113', label: '临平区' },
+          { value: '330114', label: '钱塘区' },
           { value: '330122', label: '桐庐县' },
           { value: '330127', label: '淳安县' },
           { value: '330182', label: '建德市' }
@@ -1502,7 +1495,6 @@ const district: CascaderOption[] = [
           { value: '330327', label: '苍南县' },
           { value: '330328', label: '文成县' },
           { value: '330329', label: '泰顺县' },
-          { value: '330371', label: '温州经济技术开发区' },
           { value: '330381', label: '瑞安市' },
           { value: '330382', label: '乐清市' },
           { value: '330383', label: '龙港市' }
@@ -1629,9 +1621,9 @@ const district: CascaderOption[] = [
           { value: '340122', label: '肥东县' },
           { value: '340123', label: '肥西县' },
           { value: '340124', label: '庐江县' },
-          { value: '340171', label: '合肥高新技术产业开发区' },
-          { value: '340172', label: '合肥经济技术开发区' },
-          { value: '340173', label: '合肥新站高新技术产业开发区' },
+          { value: '340176', label: '合肥高新技术产业开发区' },
+          { value: '340177', label: '合肥经济技术开发区' },
+          { value: '340178', label: '合肥新站高新技术产业开发区' },
           { value: '340181', label: '巢湖市' }
         ]
       },
@@ -1640,15 +1632,14 @@ const district: CascaderOption[] = [
         label: '芜湖市',
         children: [
           { value: '340202', label: '镜湖区' },
-          { value: '340203', label: '弋江区' },
           { value: '340207', label: '鸠江区' },
-          { value: '340208', label: '三山区' },
-          { value: '340221', label: '芜湖县' },
-          { value: '340222', label: '繁昌县' },
+          { value: '340209', label: '弋江区' },
+          { value: '340210', label: '湾沚区' },
+          { value: '340212', label: '繁昌区' },
           { value: '340223', label: '南陵县' },
-          { value: '340225', label: '无为县' },
           { value: '340271', label: '芜湖经济技术开发区' },
-          { value: '340272', label: '安徽芜湖长江大桥经济开发区' }
+          { value: '340272', label: '安徽芜湖三山经济开发区' },
+          { value: '340281', label: '无为市' }
         ]
       },
       {
@@ -1751,7 +1742,7 @@ const district: CascaderOption[] = [
           { value: '341124', label: '全椒县' },
           { value: '341125', label: '定远县' },
           { value: '341126', label: '凤阳县' },
-          { value: '341171', label: '苏滁现代产业园' },
+          { value: '341171', label: '中新苏滁高新技术产业开发区' },
           { value: '341172', label: '滁州经济技术开发区' },
           { value: '341181', label: '天长市' },
           { value: '341182', label: '明光市' }
@@ -1885,14 +1876,13 @@ const district: CascaderOption[] = [
         value: '350400',
         label: '三明市',
         children: [
-          { value: '350402', label: '梅列区' },
-          { value: '350403', label: '三元区' },
+          { value: '350404', label: '三元区' },
+          { value: '350405', label: '沙县区' },
           { value: '350421', label: '明溪县' },
           { value: '350423', label: '清流县' },
           { value: '350424', label: '宁化县' },
           { value: '350425', label: '大田县' },
           { value: '350426', label: '尤溪县' },
-          { value: '350427', label: '沙县' },
           { value: '350428', label: '将乐县' },
           { value: '350429', label: '泰宁县' },
           { value: '350430', label: '建宁县' },
@@ -1923,15 +1913,15 @@ const district: CascaderOption[] = [
         children: [
           { value: '350602', label: '芗城区' },
           { value: '350603', label: '龙文区' },
+          { value: '350604', label: '龙海区' },
+          { value: '350605', label: '长泰区' },
           { value: '350622', label: '云霄县' },
           { value: '350623', label: '漳浦县' },
           { value: '350624', label: '诏安县' },
-          { value: '350625', label: '长泰县' },
           { value: '350626', label: '东山县' },
           { value: '350627', label: '南靖县' },
           { value: '350628', label: '平和县' },
-          { value: '350629', label: '华安县' },
-          { value: '350681', label: '龙海市' }
+          { value: '350629', label: '华安县' }
         ]
       },
       {
@@ -1991,9 +1981,9 @@ const district: CascaderOption[] = [
           { value: '360102', label: '东湖区' },
           { value: '360103', label: '西湖区' },
           { value: '360104', label: '青云谱区' },
-          { value: '360105', label: '湾里区' },
           { value: '360111', label: '青山湖区' },
           { value: '360112', label: '新建区' },
+          { value: '360113', label: '红谷滩区' },
           { value: '360121', label: '南昌县' },
           { value: '360123', label: '安义县' },
           { value: '360124', label: '进贤县' }
@@ -2068,7 +2058,6 @@ const district: CascaderOption[] = [
           { value: '360724', label: '上犹县' },
           { value: '360725', label: '崇义县' },
           { value: '360726', label: '安远县' },
-          { value: '360727', label: '龙南县' },
           { value: '360728', label: '定南县' },
           { value: '360729', label: '全南县' },
           { value: '360730', label: '宁都县' },
@@ -2077,7 +2066,8 @@ const district: CascaderOption[] = [
           { value: '360733', label: '会昌县' },
           { value: '360734', label: '寻乌县' },
           { value: '360735', label: '石城县' },
-          { value: '360781', label: '瑞金市' }
+          { value: '360781', label: '瑞金市' },
+          { value: '360783', label: '龙南市' }
         ]
       },
       {
@@ -2172,7 +2162,7 @@ const district: CascaderOption[] = [
           { value: '370117', label: '钢城区' },
           { value: '370124', label: '平阴县' },
           { value: '370126', label: '商河县' },
-          { value: '370171', label: '济南高新技术产业开发区' }
+          { value: '370176', label: '济南高新技术产业开发区' }
         ]
       },
       {
@@ -2186,7 +2176,6 @@ const district: CascaderOption[] = [
           { value: '370213', label: '李沧区' },
           { value: '370214', label: '城阳区' },
           { value: '370215', label: '即墨区' },
-          { value: '370271', label: '青岛高新技术产业开发区' },
           { value: '370281', label: '胶州市' },
           { value: '370283', label: '平度市' },
           { value: '370285', label: '莱西市' }
@@ -2239,13 +2228,12 @@ const district: CascaderOption[] = [
           { value: '370611', label: '福山区' },
           { value: '370612', label: '牟平区' },
           { value: '370613', label: '莱山区' },
-          { value: '370634', label: '长岛县' },
+          { value: '370614', label: '蓬莱区' },
           { value: '370671', label: '烟台高新技术产业开发区' },
-          { value: '370672', label: '烟台经济技术开发区' },
+          { value: '370676', label: '烟台经济技术开发区' },
           { value: '370681', label: '龙口市' },
           { value: '370682', label: '莱阳市' },
           { value: '370683', label: '莱州市' },
-          { value: '370684', label: '蓬莱市' },
           { value: '370685', label: '招远市' },
           { value: '370686', label: '栖霞市' },
           { value: '370687', label: '海阳市' }
@@ -2340,9 +2328,7 @@ const district: CascaderOption[] = [
           { value: '371327', label: '莒南县' },
           { value: '371328', label: '蒙阴县' },
           { value: '371329', label: '临沭县' },
-          { value: '371371', label: '临沂高新技术产业开发区' },
-          { value: '371372', label: '临沂经济技术开发区' },
-          { value: '371373', label: '临沂临港经济开发区' }
+          { value: '371371', label: '临沂高新技术产业开发区' }
         ]
       },
       {
@@ -2358,8 +2344,7 @@ const district: CascaderOption[] = [
           { value: '371426', label: '平原县' },
           { value: '371427', label: '夏津县' },
           { value: '371428', label: '武城县' },
-          { value: '371471', label: '德州经济技术开发区' },
-          { value: '371472', label: '德州运河经济开发区' },
+          { value: '371471', label: '德州天衢新区' },
           { value: '371481', label: '乐陵市' },
           { value: '371482', label: '禹城市' }
         ]
@@ -2458,9 +2443,9 @@ const district: CascaderOption[] = [
           { value: '410303', label: '西工区' },
           { value: '410304', label: '瀍河回族区' },
           { value: '410305', label: '涧西区' },
-          { value: '410306', label: '吉利区' },
+          { value: '410307', label: '偃师区' },
+          { value: '410308', label: '孟津区' },
           { value: '410311', label: '洛龙区' },
-          { value: '410322', label: '孟津县' },
           { value: '410323', label: '新安县' },
           { value: '410324', label: '栾川县' },
           { value: '410325', label: '嵩县' },
@@ -2468,8 +2453,7 @@ const district: CascaderOption[] = [
           { value: '410327', label: '宜阳县' },
           { value: '410328', label: '洛宁县' },
           { value: '410329', label: '伊川县' },
-          { value: '410371', label: '洛阳高新技术产业开发区' },
-          { value: '410381', label: '偃师市' }
+          { value: '410371', label: '洛阳高新技术产业开发区' }
         ]
       },
       {
@@ -2676,7 +2660,7 @@ const district: CascaderOption[] = [
           { value: '411625', label: '郸城县' },
           { value: '411627', label: '太康县' },
           { value: '411628', label: '鹿邑县' },
-          { value: '411671', label: '河南周口经济开发区' },
+          { value: '411671', label: '周口临港开发区' },
           { value: '411681', label: '项城市' }
         ]
       },
@@ -2827,12 +2811,12 @@ const district: CascaderOption[] = [
           { value: '421002', label: '沙市区' },
           { value: '421003', label: '荆州区' },
           { value: '421022', label: '公安县' },
-          { value: '421023', label: '监利县' },
           { value: '421024', label: '江陵县' },
           { value: '421071', label: '荆州经济技术开发区' },
           { value: '421081', label: '石首市' },
           { value: '421083', label: '洪湖市' },
-          { value: '421087', label: '松滋市' }
+          { value: '421087', label: '松滋市' },
+          { value: '421088', label: '监利市' }
         ]
       },
       {
@@ -2930,7 +2914,6 @@ const district: CascaderOption[] = [
           { value: '430223', label: '攸县' },
           { value: '430224', label: '茶陵县' },
           { value: '430225', label: '炎陵县' },
-          { value: '430271', label: '云龙示范区' },
           { value: '430281', label: '醴陵市' }
         ]
       },
@@ -2962,9 +2945,8 @@ const district: CascaderOption[] = [
           { value: '430423', label: '衡山县' },
           { value: '430424', label: '衡东县' },
           { value: '430426', label: '祁东县' },
-          { value: '430471', label: '衡阳综合保税区' },
-          { value: '430472', label: '湖南衡阳高新技术产业园区' },
           { value: '430473', label: '湖南衡阳松木经济开发区' },
+          { value: '430476', label: '湖南衡阳高新技术产业园区' },
           { value: '430481', label: '耒阳市' },
           { value: '430482', label: '常宁市' }
         ]
@@ -3066,7 +3048,6 @@ const district: CascaderOption[] = [
         children: [
           { value: '431102', label: '零陵区' },
           { value: '431103', label: '冷水滩区' },
-          { value: '431121', label: '祁阳县' },
           { value: '431122', label: '东安县' },
           { value: '431123', label: '双牌县' },
           { value: '431124', label: '道县' },
@@ -3076,8 +3057,8 @@ const district: CascaderOption[] = [
           { value: '431128', label: '新田县' },
           { value: '431129', label: '江华瑶族自治县' },
           { value: '431171', label: '永州经济技术开发区' },
-          { value: '431172', label: '永州市金洞管理区' },
-          { value: '431173', label: '永州市回龙圩管理区' }
+          { value: '431173', label: '永州市回龙圩管理区' },
+          { value: '431181', label: '祁阳市' }
         ]
       },
       {
@@ -3121,8 +3102,7 @@ const district: CascaderOption[] = [
           { value: '433125', label: '保靖县' },
           { value: '433126', label: '古丈县' },
           { value: '433127', label: '永顺县' },
-          { value: '433130', label: '龙山县' },
-          { value: '433173', label: '湖南永顺经济开发区' }
+          { value: '433130', label: '龙山县' }
         ]
       }
     ]
@@ -3374,7 +3354,8 @@ const district: CascaderOption[] = [
           { value: '441900129', label: '高埗镇' },
           { value: '441900401', label: '松山湖' },
           { value: '441900402', label: '东莞港' },
-          { value: '441900403', label: '东莞生态园' }
+          { value: '441900403', label: '东莞生态园' },
+          { value: '441900404', label: '东莞滨海湾新区' }
         ]
       },
       {
@@ -3387,11 +3368,10 @@ const district: CascaderOption[] = [
           { value: '442000004', label: '西区街道' },
           { value: '442000005', label: '南区街道' },
           { value: '442000006', label: '五桂山街道' },
-          { value: '442000100', label: '小榄镇' },
+          { value: '442000007', label: '民众街道' },
+          { value: '442000008', label: '南朗街道' },
           { value: '442000101', label: '黄圃镇' },
-          { value: '442000102', label: '民众镇' },
           { value: '442000103', label: '东凤镇' },
-          { value: '442000104', label: '东升镇' },
           { value: '442000105', label: '古镇镇' },
           { value: '442000106', label: '沙溪镇' },
           { value: '442000107', label: '坦洲镇' },
@@ -3400,11 +3380,11 @@ const district: CascaderOption[] = [
           { value: '442000110', label: '横栏镇' },
           { value: '442000111', label: '南头镇' },
           { value: '442000112', label: '阜沙镇' },
-          { value: '442000113', label: '南朗镇' },
           { value: '442000114', label: '三乡镇' },
           { value: '442000115', label: '板芙镇' },
           { value: '442000116', label: '大涌镇' },
-          { value: '442000117', label: '神湾镇' }
+          { value: '442000117', label: '神湾镇' },
+          { value: '442000118', label: '小榄镇' }
         ]
       },
       {
@@ -3459,7 +3439,7 @@ const district: CascaderOption[] = [
           { value: '450124', label: '马山县' },
           { value: '450125', label: '上林县' },
           { value: '450126', label: '宾阳县' },
-          { value: '450127', label: '横县' }
+          { value: '450181', label: '横州市' }
         ]
       },
       {
@@ -3575,7 +3555,6 @@ const district: CascaderOption[] = [
           { value: '451002', label: '右江区' },
           { value: '451003', label: '田阳区' },
           { value: '451022', label: '田东县' },
-          { value: '451023', label: '平果县' },
           { value: '451024', label: '德保县' },
           { value: '451026', label: '那坡县' },
           { value: '451027', label: '凌云县' },
@@ -3583,7 +3562,8 @@ const district: CascaderOption[] = [
           { value: '451029', label: '田林县' },
           { value: '451030', label: '西林县' },
           { value: '451031', label: '隆林各族自治县' },
-          { value: '451081', label: '靖西市' }
+          { value: '451081', label: '靖西市' },
+          { value: '451082', label: '平果市' }
         ]
       },
       {
@@ -3796,10 +3776,10 @@ const district: CascaderOption[] = [
           { value: '510115', label: '温江区' },
           { value: '510116', label: '双流区' },
           { value: '510117', label: '郫都区' },
+          { value: '510118', label: '新津区' },
           { value: '510121', label: '金堂县' },
           { value: '510129', label: '大邑县' },
           { value: '510131', label: '蒲江县' },
-          { value: '510132', label: '新津县' },
           { value: '510181', label: '都江堰市' },
           { value: '510182', label: '彭州市' },
           { value: '510183', label: '邛崃市' },
@@ -3902,7 +3882,6 @@ const district: CascaderOption[] = [
           { value: '511011', label: '东兴区' },
           { value: '511024', label: '威远县' },
           { value: '511025', label: '资中县' },
-          { value: '511071', label: '内江经济开发区' },
           { value: '511083', label: '隆昌市' }
         ]
       },
@@ -3988,7 +3967,6 @@ const district: CascaderOption[] = [
           { value: '511723', label: '开江县' },
           { value: '511724', label: '大竹县' },
           { value: '511725', label: '渠县' },
-          { value: '511771', label: '达州经济开发区' },
           { value: '511781', label: '万源市' }
         ]
       },
@@ -4014,8 +3992,7 @@ const district: CascaderOption[] = [
           { value: '511903', label: '恩阳区' },
           { value: '511921', label: '通江县' },
           { value: '511922', label: '南江县' },
-          { value: '511923', label: '平昌县' },
-          { value: '511971', label: '巴中经济开发区' }
+          { value: '511923', label: '平昌县' }
         ]
       },
       {
@@ -4075,10 +4052,10 @@ const district: CascaderOption[] = [
         label: '凉山彝族自治州',
         children: [
           { value: '513401', label: '西昌市' },
+          { value: '513402', label: '会理市' },
           { value: '513422', label: '木里藏族自治县' },
           { value: '513423', label: '盐源县' },
           { value: '513424', label: '德昌县' },
-          { value: '513425', label: '会理县' },
           { value: '513426', label: '会东县' },
           { value: '513427', label: '宁南县' },
           { value: '513428', label: '普格县' },
@@ -4121,7 +4098,7 @@ const district: CascaderOption[] = [
         children: [
           { value: '520201', label: '钟山区' },
           { value: '520203', label: '六枝特区' },
-          { value: '520221', label: '水城县' },
+          { value: '520204', label: '水城区' },
           { value: '520281', label: '盘州市' }
         ]
       },
@@ -4163,12 +4140,12 @@ const district: CascaderOption[] = [
         children: [
           { value: '520502', label: '七星关区' },
           { value: '520521', label: '大方县' },
-          { value: '520522', label: '黔西县' },
           { value: '520523', label: '金沙县' },
           { value: '520524', label: '织金县' },
           { value: '520525', label: '纳雍县' },
           { value: '520526', label: '威宁彝族回族苗族自治县' },
-          { value: '520527', label: '赫章县' }
+          { value: '520527', label: '赫章县' },
+          { value: '520581', label: '黔西市' }
         ]
       },
       {
@@ -4288,13 +4265,13 @@ const district: CascaderOption[] = [
         children: [
           { value: '530402', label: '红塔区' },
           { value: '530403', label: '江川区' },
-          { value: '530422', label: '澄江县' },
           { value: '530423', label: '通海县' },
           { value: '530424', label: '华宁县' },
           { value: '530425', label: '易门县' },
           { value: '530426', label: '峨山彝族自治县' },
           { value: '530427', label: '新平彝族傣族自治县' },
-          { value: '530428', label: '元江哈尼族彝族傣族自治县' }
+          { value: '530428', label: '元江哈尼族彝族傣族自治县' },
+          { value: '530481', label: '澄江市' }
         ]
       },
       {
@@ -4371,6 +4348,7 @@ const district: CascaderOption[] = [
         label: '楚雄彝族自治州',
         children: [
           { value: '532301', label: '楚雄市' },
+          { value: '532302', label: '禄丰市' },
           { value: '532322', label: '双柏县' },
           { value: '532323', label: '牟定县' },
           { value: '532324', label: '南华县' },
@@ -4378,8 +4356,7 @@ const district: CascaderOption[] = [
           { value: '532326', label: '大姚县' },
           { value: '532327', label: '永仁县' },
           { value: '532328', label: '元谋县' },
-          { value: '532329', label: '武定县' },
-          { value: '532331', label: '禄丰县' }
+          { value: '532329', label: '武定县' }
         ]
       },
       {
@@ -4543,11 +4520,11 @@ const district: CascaderOption[] = [
         children: [
           { value: '540402', label: '巴宜区' },
           { value: '540421', label: '工布江达县' },
-          { value: '540422', label: '米林县' },
           { value: '540423', label: '墨脱县' },
           { value: '540424', label: '波密县' },
           { value: '540425', label: '察隅县' },
-          { value: '540426', label: '朗县' }
+          { value: '540426', label: '朗县' },
+          { value: '540481', label: '米林市' }
         ]
       },
       {
@@ -4564,8 +4541,8 @@ const district: CascaderOption[] = [
           { value: '540527', label: '洛扎县' },
           { value: '540528', label: '加查县' },
           { value: '540529', label: '隆子县' },
-          { value: '540530', label: '错那县' },
-          { value: '540531', label: '浪卡子县' }
+          { value: '540531', label: '浪卡子县' },
+          { value: '540581', label: '错那市' }
         ]
       },
       {
@@ -4640,7 +4617,7 @@ const district: CascaderOption[] = [
           { value: '610302', label: '渭滨区' },
           { value: '610303', label: '金台区' },
           { value: '610304', label: '陈仓区' },
-          { value: '610322', label: '凤翔县' },
+          { value: '610305', label: '凤翔区' },
           { value: '610323', label: '岐山县' },
           { value: '610324', label: '扶风县' },
           { value: '610326', label: '眉县' },
@@ -4754,8 +4731,8 @@ const district: CascaderOption[] = [
           { value: '610925', label: '岚皋县' },
           { value: '610926', label: '平利县' },
           { value: '610927', label: '镇坪县' },
-          { value: '610928', label: '旬阳县' },
-          { value: '610929', label: '白河县' }
+          { value: '610929', label: '白河县' },
+          { value: '610981', label: '旬阳市' }
         ]
       },
       {
@@ -4796,12 +4773,11 @@ const district: CascaderOption[] = [
         value: '620200',
         label: '嘉峪关市',
         children: [
+          { value: '620201001', label: '雄关街道' },
+          { value: '620201002', label: '钢城街道' },
           { value: '620201100', label: '新城镇' },
           { value: '620201101', label: '峪泉镇' },
-          { value: '620201102', label: '文殊镇' },
-          { value: '620201401', label: '雄关区' },
-          { value: '620201402', label: '镜铁区' },
-          { value: '620201403', label: '长城区' }
+          { value: '620201102', label: '文殊镇' }
         ]
       },
       {
@@ -4968,8 +4944,8 @@ const district: CascaderOption[] = [
           { value: '630103', label: '城中区' },
           { value: '630104', label: '城西区' },
           { value: '630105', label: '城北区' },
+          { value: '630106', label: '湟中区' },
           { value: '630121', label: '大通回族土族自治县' },
-          { value: '630122', label: '湟中县' },
           { value: '630123', label: '湟源县' }
         ]
       },
@@ -4999,7 +4975,7 @@ const district: CascaderOption[] = [
         value: '632300',
         label: '黄南藏族自治州',
         children: [
-          { value: '632321', label: '同仁县' },
+          { value: '632301', label: '同仁市' },
           { value: '632322', label: '尖扎县' },
           { value: '632323', label: '泽库县' },
           { value: '632324', label: '河南蒙古族自治县' }
@@ -5194,8 +5170,7 @@ const district: CascaderOption[] = [
           { value: '652826', label: '焉耆回族自治县' },
           { value: '652827', label: '和静县' },
           { value: '652828', label: '和硕县' },
-          { value: '652829', label: '博湖县' },
-          { value: '652871', label: '库尔勒经济技术开发区' }
+          { value: '652829', label: '博湖县' }
         ]
       },
       {
@@ -5203,8 +5178,8 @@ const district: CascaderOption[] = [
         label: '阿克苏地区',
         children: [
           { value: '652901', label: '阿克苏市' },
+          { value: '652902', label: '库车市' },
           { value: '652922', label: '温宿县' },
-          { value: '652923', label: '库车县' },
           { value: '652924', label: '沙雅县' },
           { value: '652925', label: '新和县' },
           { value: '652926', label: '拜城县' },
@@ -5278,8 +5253,8 @@ const district: CascaderOption[] = [
         children: [
           { value: '654201', label: '塔城市' },
           { value: '654202', label: '乌苏市' },
+          { value: '654203', label: '沙湾市' },
           { value: '654221', label: '额敏县' },
-          { value: '654223', label: '沙湾县' },
           { value: '654224', label: '托里县' },
           { value: '654225', label: '裕民县' },
           { value: '654226', label: '和布克赛尔蒙古自治县' }
@@ -5306,7 +5281,14 @@ const district: CascaderOption[] = [
           { value: '659002', label: '阿拉尔市' },
           { value: '659003', label: '图木舒克市' },
           { value: '659004', label: '五家渠市' },
-          { value: '659006', label: '铁门关市' }
+          { value: '659005', label: '北屯市' },
+          { value: '659006', label: '铁门关市' },
+          { value: '659007', label: '双河市' },
+          { value: '659008', label: '可克达拉市' },
+          { value: '659009', label: '昆玉市' },
+          { value: '659010', label: '胡杨河市' },
+          { value: '659011', label: '新星市' },
+          { value: '659012', label: '白杨市' }
         ]
       }
     ]
