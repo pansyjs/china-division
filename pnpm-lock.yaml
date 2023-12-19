@@ -45,8 +45,8 @@ devDependencies:
     specifier: 6.6.4
     version: 6.6.4
   sequelize-cursor-pagination:
-    specifier: ^2.2.1
-    version: 2.2.1
+    specifier: ^3.0.0
+    version: 3.4.0(sequelize@6.6.4)
   typescript:
     specifier: 4.3.4
     version: 4.3.4
@@ -16467,8 +16467,12 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /sequelize-cursor-pagination@2.2.1:
-    resolution: {integrity: sha512-roh/gzaKWTpVLBtOb/udNCYSmC951Bfe+W+/qItTFf6oZ4jSJsSfBkhwaqB4y1qJgpwnBnjKCTW3YWVCgmtMCw==}
+  /sequelize-cursor-pagination@3.4.0(sequelize@6.6.4):
+    resolution: {integrity: sha512-UOF53lpzWM7guzU7TEY9vuDKG9HTyoJ7uVGAr9Mb428DH/EfWxHDW2/TDD+NndhGY/SqJLH9ushP1mab1bK23g==}
+    peerDependencies:
+      sequelize: '>= 6.0.0'
+    dependencies:
+      sequelize: 6.6.4
     dev: true
 
   /sequelize-pool@6.1.0:
