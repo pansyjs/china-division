@@ -9,8 +9,8 @@ devDependencies:
     specifier: 4.14.170
     version: 4.14.170
   '@types/sequelize-cursor-pagination':
-    specifier: 1.2.1
-    version: 1.2.1
+    specifier: 3.0.0
+    version: 3.0.0(sequelize@6.6.4)
   '@walrus/cli':
     specifier: 1.3.4
     version: 1.3.4
@@ -45,8 +45,8 @@ devDependencies:
     specifier: 6.6.4
     version: 6.6.4
   sequelize-cursor-pagination:
-    specifier: ^2.2.1
-    version: 2.2.1
+    specifier: ^3.0.0
+    version: 3.4.0(sequelize@6.6.4)
   typescript:
     specifier: 4.3.4
     version: 4.3.4
@@ -7009,10 +7009,6 @@ packages:
       '@babel/types': 7.14.5
     dev: true
 
-  /@types/bluebird@3.5.33:
-    resolution: {integrity: sha512-ndEo1xvnYeHxm7I/5sF6tBvnsA4Tdi3zj1keRKRs12SP+2ye2A27NDJ1B6PqkfMbGAcT+mqQVqbZRIrhfOp5PQ==}
-    dev: true
-
   /@types/cacheable-request@6.0.1:
     resolution: {integrity: sha512-ykFq2zmBGOCbpIXtoVbz4SKY5QriWPh3AjyU4G74RYbtt5yOc5OfaY75ftjg7mikMOla1CTGpX3lLbuJh8DTrQ==}
     dependencies:
@@ -7042,12 +7038,6 @@ packages:
     resolution: {integrity: sha512-oeUWVaAwI+xINDUx+3F2vJkl/vVB03VChFF/Gl3iQCdbcakjuoJyMOba+3BXRtnBhxZ7uBYqQBi9EpLnvSoztA==}
     dependencies:
       '@types/color-convert': 2.0.0
-    dev: true
-
-  /@types/continuation-local-storage@3.2.2:
-    resolution: {integrity: sha512-aItm+aYPJ4rT1cHmAxO+OdWjSviQ9iB5UKb5f0Uvgln0N4hS2mcDodHtPiqicYBXViUYhqyBjhA5uyOcT+S34Q==}
-    dependencies:
-      '@types/node': 14.14.31
     dev: true
 
   /@types/cross-spawn@6.0.2:
@@ -7155,10 +7145,6 @@ packages:
       '@types/node': 14.14.31
     dev: true
 
-  /@types/lodash@4.14.169:
-    resolution: {integrity: sha512-DvmZHoHTFJ8zhVYwCLWbQ7uAbYQEk52Ev2/ZiQ7Y7gQGeV9pjBqjnQpECMHfKS1rCYAhMI7LHVxwyZLZinJgdw==}
-    dev: true
-
   /@types/lodash@4.14.170:
     resolution: {integrity: sha512-bpcvu/MKHHeYX+qeEN8GE7DIravODWdACVA1ctevD8CN24RhPZIKMn9ntfAsrvLfSX3cR5RrBKAbYm9bGs0A+Q==}
     dev: true
@@ -7234,19 +7220,13 @@ packages:
     resolution: {integrity: sha512-+nVsLKlcUCeMzD2ufHEYuJ9a2ovstb6Dp52A5VsoKxDXgvE051XgHI/33I1EymwkRGQkwnA0LkhnUzituGs4EQ==}
     dev: true
 
-  /@types/sequelize-cursor-pagination@1.2.1:
-    resolution: {integrity: sha512-BHVwIdY09Ph9q0DibeR89JmYJH1LYV6tGWf2J822l7sHrH3spTUiSwq9/ah4rfU1l6oy4JCcGFLB+4tNo8Fo/Q==}
+  /@types/sequelize-cursor-pagination@3.0.0(sequelize@6.6.4):
+    resolution: {integrity: sha512-Vmr44LmpOwuI7wPRWC1LtuQaz769gKvBVzQgmgQwy1uoMPCq6p/H1SIrXHa9Nu3+fEG+xFlunL7fbWwb5to1Gw==}
+    deprecated: This is a stub types definition. sequelize-cursor-pagination provides its own type definitions, so you do not need this installed.
     dependencies:
-      '@types/sequelize': 4.28.9
-    dev: true
-
-  /@types/sequelize@4.28.9:
-    resolution: {integrity: sha512-QqYgkw/2fEc0FyEQejnxM7cHKB8XBV3Y69k7GSFOToQBOXos0PJVqNpgROXZddXIkl2d6zicYssHuy75ws84sw==}
-    dependencies:
-      '@types/bluebird': 3.5.33
-      '@types/continuation-local-storage': 3.2.2
-      '@types/lodash': 4.14.169
-      '@types/validator': 13.1.3
+      sequelize-cursor-pagination: 3.4.0(sequelize@6.6.4)
+    transitivePeerDependencies:
+      - sequelize
     dev: true
 
   /@types/signale@1.4.1:
@@ -7275,10 +7255,6 @@ packages:
 
   /@types/unist@2.0.3:
     resolution: {integrity: sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==}
-    dev: true
-
-  /@types/validator@13.1.3:
-    resolution: {integrity: sha512-DaOWN1zf7j+8nHhqXhIgNmS+ltAC53NXqGxYuBhWqWgqolRhddKzfZU814lkHQSTG0IUfQxU7Cg0gb8fFWo2mA==}
     dev: true
 
   /@types/vfile-message@2.0.0:
@@ -16467,8 +16443,12 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /sequelize-cursor-pagination@2.2.1:
-    resolution: {integrity: sha512-roh/gzaKWTpVLBtOb/udNCYSmC951Bfe+W+/qItTFf6oZ4jSJsSfBkhwaqB4y1qJgpwnBnjKCTW3YWVCgmtMCw==}
+  /sequelize-cursor-pagination@3.4.0(sequelize@6.6.4):
+    resolution: {integrity: sha512-UOF53lpzWM7guzU7TEY9vuDKG9HTyoJ7uVGAr9Mb428DH/EfWxHDW2/TDD+NndhGY/SqJLH9ushP1mab1bK23g==}
+    peerDependencies:
+      sequelize: '>= 6.0.0'
+    dependencies:
+      sequelize: 6.6.4
     dev: true
 
   /sequelize-pool@6.1.0:
