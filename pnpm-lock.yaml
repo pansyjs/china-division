@@ -39,8 +39,8 @@ devDependencies:
     specifier: 5.1.3
     version: 5.1.3
   lodash:
-    specifier: 4.17.21
-    version: 4.17.21
+    specifier: 4.17.23
+    version: 4.17.23
   sequelize:
     specifier: 6.6.4
     version: 6.6.4
@@ -95,7 +95,7 @@ packages:
       debug: 4.3.1
       gensync: 1.0.0-beta.2
       json5: 2.2.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       resolve: 1.20.0
       semver: 5.7.1
       source-map: 0.5.7
@@ -119,7 +119,7 @@ packages:
       debug: 4.3.1
       gensync: 1.0.0-beta.2
       json5: 2.2.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       resolve: 1.20.0
       semver: 5.7.1
       source-map: 0.5.7
@@ -167,7 +167,7 @@ packages:
       debug: 4.3.1
       gensync: 1.0.0-beta.2
       json5: 2.2.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       semver: 6.3.0
       source-map: 0.5.7
     transitivePeerDependencies:
@@ -495,7 +495,7 @@ packages:
       '@babel/template': 7.12.13
       '@babel/traverse': 7.13.0
       '@babel/types': 7.14.5
-      lodash: 4.17.21
+      lodash: 4.17.23
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4809,7 +4809,7 @@ packages:
     dependencies:
       '@babel/core': 7.12.3
       find-cache-dir: 2.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       make-dir: 2.1.0
       pirates: 4.0.1
       source-map-support: 0.5.19
@@ -4822,7 +4822,7 @@ packages:
     dependencies:
       '@babel/core': 7.11.4
       find-cache-dir: 2.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       make-dir: 2.1.0
       pirates: 4.0.1
       source-map-support: 0.5.19
@@ -4835,7 +4835,7 @@ packages:
     dependencies:
       '@babel/core': 7.13.15
       find-cache-dir: 2.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       make-dir: 2.1.0
       pirates: 4.0.1
       source-map-support: 0.5.19
@@ -4848,7 +4848,7 @@ packages:
     dependencies:
       '@babel/core': 7.14.6
       find-cache-dir: 2.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       make-dir: 2.1.0
       pirates: 4.0.1
       source-map-support: 0.5.19
@@ -4894,7 +4894,7 @@ packages:
       '@babel/types': 7.14.5
       debug: 4.3.1
       globals: 11.12.0
-      lodash: 4.17.21
+      lodash: 4.17.23
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4935,7 +4935,7 @@ packages:
     resolution: {integrity: sha512-A2aa3QTkWoyqsZZFl56MLUsfmh7O0gN41IPvXAE/++8ojpbz12SszD7JEGYVdn4f9Kt4amIei07swF1h4AqmmQ==}
     dependencies:
       '@babel/helper-validator-identifier': 7.12.11
-      lodash: 4.17.21
+      lodash: 4.17.23
       to-fast-properties: 2.0.0
     dev: true
 
@@ -5114,7 +5114,7 @@ packages:
       execa: 4.1.0
       glob: 7.1.6
       got: 11.8.2
-      lodash: 4.17.21
+      lodash: 4.17.23
       mkdirp: 1.0.4
       mustache: 4.1.0
       portfinder: 1.0.28
@@ -5166,7 +5166,7 @@ packages:
       execa: 4.1.0
       glob: 7.1.6
       got: 11.8.2
-      lodash: 4.17.21
+      lodash: 4.17.23
       mkdirp: 1.0.4
       mustache: 4.1.0
       portfinder: 1.0.28
@@ -5218,7 +5218,7 @@ packages:
       execa: 4.1.0
       glob: 7.1.6
       got: 11.8.2
-      lodash: 4.17.21
+      lodash: 4.17.23
       mkdirp: 1.0.4
       mustache: 4.1.0
       portfinder: 1.0.28
@@ -5247,7 +5247,7 @@ packages:
     engines: {node: '>=v8.17.0'}
     dependencies:
       '@commitlint/types': 9.1.2
-      lodash: 4.17.21
+      lodash: 4.17.23
     dev: true
 
   /@commitlint/execute-rule@9.1.2:
@@ -5290,7 +5290,7 @@ packages:
       '@commitlint/types': 9.1.2
       chalk: 4.1.0
       cosmiconfig: 6.0.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       resolve-from: 5.0.0
     dev: true
 
@@ -5321,7 +5321,7 @@ packages:
     engines: {node: '>=v8.17.0'}
     dependencies:
       import-fresh: 3.3.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       resolve-from: 5.0.0
       resolve-global: 1.0.0
     dev: true
@@ -5364,7 +5364,7 @@ packages:
       ignore: 4.0.6
       import-fresh: 3.3.0
       js-yaml: 3.14.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       minimatch: 3.0.4
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -7406,7 +7406,7 @@ packages:
       debug: 4.3.1
       globby: 11.0.2
       is-glob: 4.0.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       semver: 7.3.4
       tsutils: 3.20.0(typescript@4.3.4)
       typescript: 4.3.4
@@ -7839,6 +7839,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.11.2):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -8247,7 +8248,7 @@ packages:
   /async@2.6.3:
     resolution: {integrity: sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==}
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
     dev: true
 
   /asynckit@0.4.0:
@@ -9379,7 +9380,7 @@ packages:
       git-raw-commits: 2.0.0
       git-remote-origin-url: 2.0.0
       git-semver-tags: 2.0.3
-      lodash: 4.17.21
+      lodash: 4.17.23
       normalize-package-data: 2.5.0
       q: 1.5.1
       read-pkg: 3.0.0
@@ -9402,7 +9403,7 @@ packages:
       dateformat: 3.0.3
       handlebars: 4.7.7
       json-stringify-safe: 5.0.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       meow: 8.1.2
       semver: 6.3.0
       split: 1.0.1
@@ -9424,7 +9425,7 @@ packages:
     dependencies:
       JSONStream: 1.3.5
       is-text-path: 1.0.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       meow: 8.1.2
       split2: 3.2.2
       through2: 4.0.2
@@ -10415,7 +10416,7 @@ packages:
       js-yaml: 3.14.1
       json-stable-stringify-without-jsonify: 1.0.1
       levn: 0.4.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       minimatch: 3.0.4
       natural-compare: 1.4.0
       optionator: 0.9.1
@@ -11192,7 +11193,7 @@ packages:
     hasBin: true
     dependencies:
       dargs: 7.0.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       meow: 8.1.2
       split2: 3.2.2
       through2: 4.0.2
@@ -11935,7 +11936,7 @@ packages:
       cli-width: 2.2.1
       external-editor: 3.1.0
       figures: 2.0.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       mute-stream: 0.0.7
       run-async: 2.4.1
       rxjs: 6.6.6
@@ -11954,7 +11955,7 @@ packages:
       cli-width: 3.0.0
       external-editor: 3.1.0
       figures: 3.2.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       mute-stream: 0.0.8
       run-async: 2.4.1
       rxjs: 6.6.6
@@ -11973,7 +11974,7 @@ packages:
       cli-width: 3.0.0
       external-editor: 3.1.0
       figures: 3.2.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       mute-stream: 0.0.8
       run-async: 2.4.1
       rxjs: 6.6.6
@@ -13592,6 +13593,10 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: true
+
+  /lodash@4.17.23:
+    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
     dev: true
 
   /log-symbols@2.2.0:
@@ -15353,7 +15358,7 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       chalk: 2.4.2
-      lodash: 4.17.21
+      lodash: 4.17.23
       log-symbols: 2.2.0
       postcss: 7.0.35
     dev: true
@@ -15413,7 +15418,7 @@ packages:
     resolution: {integrity: sha512-r4T2oQd1giURJdHQ/RMb72dKZCuLOdWx2B/XhXN1Y1ZdnwXsKH896Qz6vD4tFy9xSjpKNYhlZoJmWyhH/7JUQw==}
     engines: {node: '>=6.14.3'}
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
       postcss: 7.0.35
     dev: true
 
@@ -15421,7 +15426,7 @@ packages:
     resolution: {integrity: sha512-Y9fUFkIhfrm6i0Ta3n+89j56EFqaNRdUKqXyRp6kvTcSXnmgEjaVowCXH+JBe9+YKWqd4nc28r2sgwnzJalccA==}
     engines: {node: '>=8.7.0'}
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
       postcss: 7.0.35
     dev: true
 
@@ -16503,7 +16508,7 @@ packages:
       debug: 4.3.1
       dottie: 2.0.2
       inflection: 1.13.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       moment: 2.29.1
       moment-timezone: 0.5.33
       retry-as-promised: 3.2.0
@@ -17128,7 +17133,7 @@ packages:
     peerDependencies:
       stylelint: ^9.10.1 || ^10.0.0
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
       postcss: 7.0.35
       postcss-sorting: 4.1.0
       stylelint: 9.10.1
@@ -17139,7 +17144,7 @@ packages:
     peerDependencies:
       stylelint: ^10.0.1 || ^11.0.0 || ^12.0.0 || ^13.0.0
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
       postcss: 7.0.35
       postcss-sorting: 5.0.1
       stylelint: 13.6.1
@@ -17169,7 +17174,7 @@ packages:
       imurmurhash: 0.1.4
       known-css-properties: 0.19.0
       leven: 3.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       log-symbols: 4.0.0
       mathml-tag-names: 2.1.3
       meow: 7.1.1
@@ -17226,7 +17231,7 @@ packages:
       imurmurhash: 0.1.4
       known-css-properties: 0.11.0
       leven: 2.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       log-symbols: 2.2.0
       mathml-tag-names: 2.1.3
       meow: 5.0.0
@@ -17351,7 +17356,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       ajv: 6.12.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       slice-ansi: 2.1.0
       string-width: 3.1.0
     dev: true
@@ -18279,7 +18284,7 @@ packages:
       eslint-visitor-keys: 1.3.0
       espree: 6.2.1
       esquery: 1.4.0
-      lodash: 4.17.21
+      lodash: 4.17.23
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -18402,7 +18407,7 @@ packages:
     resolution: {integrity: sha512-os0KkeeqUOl7ccdDT1qqUcS4KH4tcBTSKK5Nl5WKb2lyxInIZ/CpjkqKa1Ss12mjfdcRX9mHmPPs7/SxG1Hbdw==}
     engines: {node: '>=10'}
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
       tr46: 2.1.0
       webidl-conversions: 6.1.0
     dev: true
