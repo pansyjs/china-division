@@ -42,8 +42,8 @@ devDependencies:
     specifier: 4.17.21
     version: 4.17.21
   sequelize:
-    specifier: 6.6.4
-    version: 6.6.4
+    specifier: 6.37.8
+    version: 6.37.8
   sequelize-cursor-pagination:
     specifier: ^2.2.1
     version: 2.2.1
@@ -7056,6 +7056,12 @@ packages:
       '@types/node': 14.14.31
     dev: true
 
+  /@types/debug@4.1.13:
+    resolution: {integrity: sha512-KSVgmQmzMwPlmtljOomayoR89W4FynCAi3E8PPs7vmDVPe84hT+vGPKkJfThkmXs0x0jAaa9U8uW8bbfyS2fWw==}
+    dependencies:
+      '@types/ms': 2.1.0
+    dev: true
+
   /@types/debug@4.1.5:
     resolution: {integrity: sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==}
     dev: true
@@ -7183,6 +7189,10 @@ packages:
       '@types/node': 14.14.31
     dev: true
 
+  /@types/ms@2.1.0:
+    resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
+    dev: true
+
   /@types/mustache@4.1.1:
     resolution: {integrity: sha512-Sm0NWeLhS2QL7NNGsXvO+Fgp7e3JLHCO6RS3RCnfjAnkw6Y1bsji/AGfISdQZDIR/AeOyzkrxRk9jBkl55zdJw==}
     dev: true
@@ -7279,6 +7289,10 @@ packages:
 
   /@types/validator@13.1.3:
     resolution: {integrity: sha512-DaOWN1zf7j+8nHhqXhIgNmS+ltAC53NXqGxYuBhWqWgqolRhddKzfZU814lkHQSTG0IUfQxU7Cg0gb8fFWo2mA==}
+    dev: true
+
+  /@types/validator@13.15.10:
+    resolution: {integrity: sha512-T8L6i7wCuyoK8A/ZeLYt1+q0ty3Zb9+qbSSvrIVitzT3YjZqkTZ40IbRsPanlB4h1QB3JVL1SYCdR6ngtFYcuA==}
     dev: true
 
   /@types/vfile-message@2.0.0:
@@ -7839,6 +7853,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.11.2):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -9835,6 +9850,18 @@ packages:
       ms: 2.1.2
     dev: true
 
+  /debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.3
+    dev: true
+
   /debuglog@1.0.1:
     resolution: {integrity: sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=}
     dev: true
@@ -10094,8 +10121,9 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dottie@2.0.2:
-    resolution: {integrity: sha512-fmrwR04lsniq/uSr8yikThDTrM7epXHBAAjH9TbeH3rEA8tdCO7mRzB9hdmdGyJCxF8KERo9CITcm3kGuoyMhg==}
+  /dottie@2.0.7:
+    resolution: {integrity: sha512-7lAK2A0b3zZr3UC5aE69CPdCFR4RHW1o2Dr74TqFykxkUCBXSRJum/yPc7g8zRHJqWKomPLHwFLLoUnn8PXXRg==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dev: true
 
   /duplexer3@0.1.4:
@@ -11892,8 +11920,8 @@ packages:
     resolution: {integrity: sha512-IClj+Xz94+d7irH5qRyfJonOdfTzuDaifE6ZPWfx0N0+/ATZCbuTPq2prFl526urkQd90WyUKIh1DfBQ2hMz9A==}
     dev: true
 
-  /inflection@1.13.1:
-    resolution: {integrity: sha512-dldYtl2WlN0QDkIDtg8+xFwOS2Tbmp12t1cHa5/YClU6ZQjTFm7B66UcVbh9NQB+HvT5BAd2t5+yKsBkw5pcqA==}
+  /inflection@1.13.4:
+    resolution: {integrity: sha512-6I/HUDeYFfuNCVS3td055BaXBwKYuzw7K3ExVMStBowKo9oOAMJIXIHvdyR3iboTCp1b+1i5DSkIZTcwIktuDw==}
     engines: {'0': node >= 0.4.0}
     dev: true
 
@@ -14094,14 +14122,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /moment-timezone@0.5.33:
-    resolution: {integrity: sha512-PTc2vcT8K9J5/9rDEPe5czSIKgLoGsH8UNpA4qZTVw0Vd/Uz19geE9abbIOQKaAQFcnQ3v5YEXrbSc5BpshH+w==}
+  /moment-timezone@0.5.48:
+    resolution: {integrity: sha512-f22b8LV1gbTO2ms2j2z13MuPogNoh5UzxL3nzNAYKGraILnbGc9NEE6dyiiiLv46DGRb8A4kg8UKWLjPthxBHw==}
     dependencies:
-      moment: 2.29.1
+      moment: 2.30.1
     dev: true
 
-  /moment@2.29.1:
-    resolution: {integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==}
+  /moment@2.30.1:
+    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
     dev: true
 
   /move-concurrently@1.0.1:
@@ -14116,7 +14144,7 @@ packages:
     dev: true
 
   /ms@2.0.0:
-    resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
+    resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
     dev: true
 
   /ms@2.1.2:
@@ -14903,6 +14931,10 @@ packages:
   /performance-now@2.1.0:
     resolution: {integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=}
     requiresBuild: true
+    dev: true
+
+  /pg-connection-string@2.14.0:
+    resolution: {integrity: sha512-XwWDGcLRGCXAR8F/AM5bG7Q+A3Wm2s6QeEjlOKZLlH3UYcguiqCWKyWXVag5TLTIjR7oOJUY8kcADaZgWPyLeg==}
     dev: true
 
   /picomatch@2.2.2:
@@ -16230,10 +16262,8 @@ packages:
     engines: {node: '>=0.12'}
     dev: true
 
-  /retry-as-promised@3.2.0:
-    resolution: {integrity: sha512-CybGs60B7oYU/qSQ6kuaFmRd9sTZ6oXSc0toqePvV74Ac6/IFZSI1ReFQmtCN+uvW1Mtqdwpvt/LGOiCBAY2Mg==}
-    dependencies:
-      any-promise: 1.3.0
+  /retry-as-promised@7.1.1:
+    resolution: {integrity: sha512-hMD7odLOt3LkTjcif8aRZqi/hybjpLNgSk5oF5FCowfCjok6LukpN2bDX7R5wDmbgBQFn7YoBxSagmtXHaJYJw==}
     dev: true
 
   /retry@0.10.1:
@@ -16467,51 +16497,69 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
+  /semver@7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dev: true
+
   /sequelize-cursor-pagination@2.2.1:
     resolution: {integrity: sha512-roh/gzaKWTpVLBtOb/udNCYSmC951Bfe+W+/qItTFf6oZ4jSJsSfBkhwaqB4y1qJgpwnBnjKCTW3YWVCgmtMCw==}
     dev: true
 
-  /sequelize-pool@6.1.0:
-    resolution: {integrity: sha512-4YwEw3ZgK/tY/so+GfnSgXkdwIJJ1I32uZJztIEgZeAO6HMgj64OzySbWLgxj+tXhZCJnzRfkY9gINw8Ft8ZMg==}
+  /sequelize-pool@7.1.0:
+    resolution: {integrity: sha512-G9c0qlIWQSK29pR/5U2JF5dDQeqqHRragoyahj/Nx4KOOQ3CPPfzxnfqFPCSB7x5UgjOgnZ61nSxz+fjDpRlJg==}
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /sequelize@6.6.4:
-    resolution: {integrity: sha512-SOSu3tclOjHJfvuIITUlAsh2Q642gFxjpNN+IM1quFZ7jU5Pep7FIAwBK8UWgTpNc9TK9rUr1cyLB/G25CGicA==}
+  /sequelize@6.37.8:
+    resolution: {integrity: sha512-HJ0IQFqcTsTiqbEgiuioYFMSD00TP6Cz7zoTti+zVVBwVe9fEhev9cH6WnM3XU31+ABS356durAb99ZuOthnKw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
+      ibm_db: '*'
       mariadb: '*'
       mysql2: '*'
+      oracledb: '*'
       pg: '*'
       pg-hstore: '*'
+      snowflake-sdk: '*'
       sqlite3: '*'
       tedious: '*'
     peerDependenciesMeta:
+      ibm_db:
+        optional: true
       mariadb:
         optional: true
       mysql2:
         optional: true
+      oracledb:
+        optional: true
       pg:
         optional: true
       pg-hstore:
+        optional: true
+      snowflake-sdk:
         optional: true
       sqlite3:
         optional: true
       tedious:
         optional: true
     dependencies:
-      debug: 4.3.1
-      dottie: 2.0.2
-      inflection: 1.13.1
+      '@types/debug': 4.1.13
+      '@types/validator': 13.15.10
+      debug: 4.4.3
+      dottie: 2.0.7
+      inflection: 1.13.4
       lodash: 4.17.21
-      moment: 2.29.1
-      moment-timezone: 0.5.33
-      retry-as-promised: 3.2.0
-      semver: 7.3.4
-      sequelize-pool: 6.1.0
+      moment: 2.30.1
+      moment-timezone: 0.5.48
+      pg-connection-string: 2.14.0
+      retry-as-promised: 7.1.1
+      semver: 7.8.5
+      sequelize-pool: 7.1.0
       toposort-class: 1.0.1
       uuid: 8.3.2
-      validator: 10.11.0
+      validator: 13.15.35
       wkx: 0.5.0
     transitivePeerDependencies:
       - supports-color
@@ -17633,7 +17681,7 @@ packages:
     dev: true
 
   /toposort-class@1.0.1:
-    resolution: {integrity: sha1-f/0feMi+KMO6Rc1OGj9e4ZO9mYg=}
+    resolution: {integrity: sha512-OsLcGGbYF3rMjPUf8oKktyvCiUxSbqMMS39m33MAjLTC1DVIH6x3WSt63/M77ihI09+Sdfk1AXvfhCEeUmC7mg==}
     dev: true
 
   /tough-cookie@2.5.0:
@@ -18154,8 +18202,8 @@ packages:
       builtins: 1.0.3
     dev: true
 
-  /validator@10.11.0:
-    resolution: {integrity: sha512-X/p3UZerAIsbBfN/IwahhYaBbY68EN/UQBWHtsbXGT5bfrH/p4NQzUCG1kF/rtKaNpnJ7jAu6NGTdSNtyNIXMw==}
+  /validator@13.15.35:
+    resolution: {integrity: sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw==}
     engines: {node: '>= 0.10'}
     dev: true
 
